@@ -1,10 +1,10 @@
 import React from "react";
-
+import GitHubUserFinder from "../components/GitHubUserFinder"
 
 const App = () => {
   return (
-    <h1>HI Natisa bhaimane, Natisa game coming soon here! :)
-    </h1>
+    <h1><GitHubUserFinder /></h1>
+ 
   );
 };
 export default App;

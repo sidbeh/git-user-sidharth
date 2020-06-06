@@ -30,7 +30,7 @@ function GitHubUserFinder() {
                 const resp = await fetch(proxyurl+url, { method: 'GET'})
                 let res = await resp.json()
 
-                let user = {"login":res.login, "name":res.name, "followers":res.followers, "following":res.following, "avatar_url":res.avatar_url, "public_repos":res.public_repos, "html_url":res.html_url}
+                let user = {"login":result.login, "name":res.name, "followers":res.followers, "following":res.following, "avatar_url":result.avatar_url, "public_repos":result.public_repos, "html_url":result.html_url}
                 console.log(finalResult)
                 updateFinalResult(prev =>[...prev, user])
             })

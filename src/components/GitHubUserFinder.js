@@ -27,7 +27,7 @@ function GitHubUserFinder() {
             newResp.map(async (result) =>  {
                 let proxyurl = "https://cors-anywhere.herokuapp.com/"
                 let url = result.url
-                const resp = await fetch(proxyurl+url, { method: 'GET'})
+                const resp = await fetch(url, { method: 'GET'})
                 let res = await resp.json()
 
                 let user = {"login":result.login, "name":res.name, "followers":res.followers, "following":res.following, "avatar_url":result.avatar_url, "public_repos":result.public_repos, "html_url":result.html_url}

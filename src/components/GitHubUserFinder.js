@@ -45,7 +45,7 @@ function GitHubUserFinder() {
     return(
         <div className="container">
             <div className="row">
-                <h2>Ansu paisa de please, phone kinibi:</h2>
+                <h2>Search GitHub Account:</h2>
                 <div id="custom-search-input">
                     <div className="input-group col-md-12">
                         <input type="text" className="search-query form-control" placeholder="Enter username" onChange={e => {setUserName(e.target.value)}} />
